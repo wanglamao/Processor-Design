@@ -1,0 +1,20 @@
+00000000 <func>:
+   0:	1080000e 	beqz	a0,3c <func+0x3c>
+   4:	00000000 	nop
+   8:	80850000 	lb	a1,0(a0)
+   c:	00000000 	nop
+  10:	10a0000c 	beqz	a1,44 <func+0x44>
+  14:	00000000 	nop
+  18:	00001025 	move	v0,zero
+  1c:	24840001 	addiu	a0,a0,1
+  20:	38a30020 	xori	v1,a1,0x20
+  24:	80850000 	lb	a1,0(a0)
+  28:	0003182a 	slt	v1,zero,v1
+  2c:	14a0fffb 	bnez	a1,1c <func+0x1c>
+  30:	00431021 	addu	v0,v0,v1
+  34:	03e00008 	jr	ra
+  38:	00000000 	nop
+  3c:	03e00008 	jr	ra
+  40:	2402ffff 	li	v0,-1
+  44:	03e00008 	jr	ra
+  48:	00001025 	move	v0,zero
